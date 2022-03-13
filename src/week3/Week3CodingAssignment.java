@@ -8,7 +8,8 @@ public class Week3CodingAssignment {
 		
 // 1. Create an array of int called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
 		int[] ages = {3, 9, 23, 64, 2, 8, 28, 93};
-// a. Programmatically subtract the value of the first element in the array from the value in the last element of the array (i.e. do not use ages[7] in your code). Print the result to the console.
+// a. Programmatically subtract the value of the first element in the array from the value in the last element of the array (i.e. do not use ages[7] in your code). 
+//	  Print the result to the console.
 		System.out.print("1a) ");
 		System.out.println(ages[ages.length - 1] - ages[0]);
 // b. Add a new age to your array and repeat the step above to ensure it is dynamic (works for arrays of different lengths).
@@ -52,7 +53,8 @@ public class Week3CodingAssignment {
 		System.out.print("4)  First element of names array: ");
 		System.out.println(names[0]);
 		
-// 5. Create a new array of int called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
+// 5. Create a new array of int called nameLengths. Write a loop to iterate over the previously created names array 
+//    and add the length of each name to the nameLengths array.
 		int[] nameLengths = new int[names.length];
 		for (int i = 0; i < names.length; i++) {
 			nameLengths[i] = names[i].length();
@@ -66,7 +68,8 @@ public class Week3CodingAssignment {
 		System.out.print("6)  ");
 		System.out.println(sumLength);
 		
-// 7. Write a method that takes a String, word, and an int, n, as arguments and returns the word concatenated to itself n number of times. (i.e. if I pass in “Hello” and 3, I would expect the method to return “HelloHelloHello”).
+// 7. Write a method that takes a String, word, and an int, n, as arguments and returns the word concatenated to itself n number of times. 
+//    (i.e. if I pass in “Hello” and 3, I would expect the method to return “HelloHelloHello”).
 		// See method below
 		Scanner in1 = new Scanner(System.in);
 		System.out.println("7)  repeatedWord method");
@@ -81,7 +84,8 @@ public class Week3CodingAssignment {
 		}
 		System.out.println("Your repeated word is: " + repeatedWord(word, n));
 		
-// 8. Write a method that takes two Strings, firstName and lastName, and returns a full name (the full name should be the first and the last name as a String separated by a space).
+// 8. Write a method that takes two Strings, firstName and lastName, and returns a full name 
+//	  (the full name should be the first and the last name as a String separated by a space).
 		Scanner in2 = new Scanner(System.in);
 		System.out.println("8)  fullName method");
 		System.out.print("Please enter your first name: ");
@@ -121,7 +125,8 @@ public class Week3CodingAssignment {
 		}
 		System.out.println("The average of your numbers is: " + average(doubleArray1));
 		
-// 11. Write a method that takes two arrays of double and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
+// 11. Write a method that takes two arrays of double and returns true if the average of the elements in the first array 
+//     is greater than the average of the elements in the second array.
 		Scanner in5 = new Scanner(System.in);
 		System.out.println("11) isArr1Greater method");
 		System.out.print("Please enter the amount of floating-point numbers you would like in your second array: ");
@@ -139,7 +144,8 @@ public class Week3CodingAssignment {
 			System.out.println("The average of your second array is greater than the average of your first array!");
 		}
 		
-// 12. Write a method called willBuyDrink that takes a boolean isHotOutside, and a double moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
+// 12. Write a method called willBuyDrink that takes a boolean isHotOutside, and a double moneyInPocket, and 
+//     returns true if it is hot outside and if moneyInPocket is greater than 10.50.
 		Scanner in6 = new Scanner(System.in);
 		System.out.println("12) willBuyDrink method");
 		boolean isHotOutside;
